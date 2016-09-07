@@ -1,0 +1,147 @@
+.div-round {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	font-family: "YaHei";
+	text-align: left;
+	white-space: nowrap;
+	/*vertical-align: middle;*/
+	background-image: none;
+/*	border: 1px solid transparent;*/
+	border-radius: 4px;
+}
+
+#box-main {
+	width: 420px;
+	height: 420px;
+	padding: 5px;
+	border: 2px solid red;
+}
+
+#box0,#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#boxa,#boxb,#boxc,#boxd,#boxe,#boxf
+	{
+	/*£¿*/
+	height: 68px;
+	width: 93px;
+	border: 1px solid red;
+	float: left;
+	margin: 5px;
+	padding-top: 25px;
+	font-size: 30px;
+	text-align: center;
+/*	background: pink;*/
+	font-size: 30px;
+}
+
+#game-panel,#score,#max {
+	width: 630px;
+	position: relative;
+	left: 600px;
+	top: 20px;
+}
+
+#keys,#tips,#time,#danger {
+	width: 200px;
+	margin: 20px auto;
+}
+
+#tips{
+	width:420px;
+	float:left;
+	padding:10px;
+	border:1px solid red;
+	background: pink;
+}
+
+#keys {
+	font-size: 84px;
+	color: #bbbbbb;
+}
+
+#danger {
+	color: #440044;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align:  middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 6px;
+}
+
+.btn:hover,.btn:focus {
+	color: #333333;
+	text-decoration: none;
+}
+
+.btn-primary {
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	z-index: 99;
+}
+/*.btn-primary.active,.open .dropdown-toggle.btn-primary*/
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active
+	{
+	color: #ffffff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+/*,.btn-primary.active,.open .dropdown-toggle.btn-prim*/
+.btn-primary:activeary
+	{
+	background-image: none;
+}
+.cheat {
+	width: 400px;
+	height: 500px;
+	border: 1px solid red;
+	right: 10%;
+	top: 10%;
+	position: absolute;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+.cheat span{
+	color: red;
+	font-size:21px; 
+}
+.btnClass{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin: 15px;
+	text-align:center;
+	border-radius: 5px;
+	cursor: pointer;
+    /*display: none;*/
+    
+}
+.btnclass{
+	background-color: red;
+}
+
+.conf{
+	width:60px;
+	height:40px;
+	position:absolute;
+	bottom:30px;
+	text-align:center;
+	background-color: #428bca;
+	left: 40%;
+	border-radius: 7px;
+	cursor: pointer;
+
+}

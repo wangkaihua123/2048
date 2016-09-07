@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>2048游戏</title>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="div-round" id="tips">↑(W)/↓(S)/←(A)/→(D)控制方向</div>
+<div id="game-panel">
+	<div class="div-round" id="box-main">
+		<div class="div-round box-lm" id="box0"></div>
+		<div class="div-round box-lm" id="box1"></div>
+		<div class="div-round box-lm" id="box2"></div>
+		<div class="div-round box-lm" id="box3"></div>
+		<div class="div-round box-lm" id="box4"></div>
+		<div class="div-round box-lm" id="box5"></div>
+		<div class="div-round box-lm" id="box6"></div>
+		<div class="div-round box-lm" id="box7"></div>
+		<div class="div-round box-lm" id="box8"></div>
+		<div class="div-round box-lm" id="box9"></div>
+		<div class="div-round box-lm" id="boxa"></div>
+		<div class="div-round box-lm" id="boxb"></div>
+		<div class="div-round box-lm" id="boxc"></div>
+		<div class="div-round box-lm" id="boxd"></div>
+		<div class="div-round box-lm" id="boxe"></div>
+		<div class="div-round box-lm" id="boxf"></div>
+	</div>
+</div>
+	<!--  提示点击的方向 -->
+	<div id="keys">&nbsp;</div>
+	<!-- 点击按钮重新开始  -->
+	<div style="width:200px;margin: 50px auto;">
+		<input type="button" value="开始" class="btn btn-primary" onClick="init();">
+<!-- 		<input type="button" value="重新开始" class="btn btn-primary" onClick="if(window.confirm('您确定重新开始吗?')){init();}"> -->
+<div class="cheat" >
+     <span>请点击您想要更换的两个<b>相邻的</b>位置，</span>
+	<ul>
+		<li><input type="button" id="cbox0" class="btnClass" /></li>
+		<li><input type="button" id="cbox1" class="btnClass"/></li>
+		<li><input type="button" id="cbox2" class="btnClass"/></li>
+		<li><input type="button" id="cbox3" class="btnClass" /></li>
+		<li><input type="button" id="cbox4" class="btnClass" /></li>
+		<li><input type="button" id="cbox5" class="btnClass" /></li>
+		<li><input type="button" id="cbox6" class="btnClass" /></li>
+		<li><input type="button" id="cbox7" class="btnClass" /></li>
+		<li><input type="button" id="cbox8" class="btnClass" /></li>
+	    <li><input type="button" id="cbox9" class="btnClass" /></li>
+		<li><input type="button" id="cboxa" class="btnClass" /></li>
+		<li><input type="button" id="cboxb" class="btnClass"/></li>
+		<li><input type="button" id="cboxc" class="btnClass"/></li>
+		<li><input type="button" id="cboxd" class="btnClass"/></li>
+		<li><input type="button" id="cboxe" class="btnClass"/></li>
+		<li><input type="button" id="cboxf" class="btnClass"/></li>
+	</ul>
+	 <input type="button" class="btn-primary conf" value="确认" id="confchange" onClick="conchange();"/>
+</div>
+	</div>
+	<div id="score">
+		总分数:00
+	</div>
+	<div id="max">
+		当前最大数:
+	</div>
+	<div id="time">
+		当前用时: 0s。
+	</div>
+	<!-- 提示快结束 -->
+	<div id="danger">
+	</div>
+
+
+</div>
+</body>
+</html>
